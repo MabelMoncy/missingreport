@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert page</title>
+    <link rel="stylesheet" href="alert.css">
+</head>
+<body>
+    <header>
+        <h1>🚨MISSING PERSON ALERT🚨</h1>
+    </header>
+    <main>
+        <section class="form-container">
+    <form id="missingform">
+        <h2>🔍REPORT A MISSING PERSON</h2>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter full name" id="name" required>
+        <label for="age">Age:</label>
+        <input type="number" placeholder="Enter age" id="age" required>
+        <label for="location">Location:</label>
+        <input type="text" placeholder="Location" id="location" required>
+        <label for="description">Description:</label>
+        <textarea placeholder="Brief description about the missing person" id="description" required></textarea>
+        <label for="image">Image choose file:</label>
+        
+        <input type="file" id="image">
+        <button type="submit">Report Missing</button>
+    </form>
+    </section>
+    <section class="list-container">
+        <h2>📜Reported Missing Persons</h2>
+            <div id="missinglist"></div>
+    </section>
+    </main>
+    <footer>
+        <p>Wed Developed by, Mabel Anto Moncy <br>For more info mail to: mabelantomoncy2005@gmail.com</p>
+        </footer>
+    <script src="./alert.js"></script>
+</body>
+</html>

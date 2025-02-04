@@ -1,0 +1,134 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: arial;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    text-align:center;
+    background-color:rgba(210, 20, 20,0.5);
+    padding:10px;
+    margin-bottom:15px;
+    font-weight:bold;
+    border-radius:20px;
+    color: white;
+}
+form{
+    background-color: rgb(255, 255, 255,0.3);
+    padding: 24px;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+}
+form p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input,textarea{
+    width: 95%;
+    padding: 15px;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border: none;
+}
+button{
+
+    background-color: red;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(216, 73, 73);
+    cursor: pointer;
+}
+input:hover{
+    padding-top: 15px;
+    margin-bottom: 15px;
+    transition: 0.5s ease-out;
+}
+textarea:hover{
+    padding-top: 15px;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+footer{
+    background-color:rgba(210, 20, 20,0.5);
+    padding:20px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    display: fixed;
+    color: white;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/*Reported list*/
+.list-container{
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+.missing-card img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.missing-card div,img{
+    flex: 1;
+    background-color: white;
+    box-shadow:rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+.missing-card:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+    color: rgb(100, 20, 20);
+}
+.missing-card p{
+    margin: 5px 0;
+}
+/*Responsive Web design*/
+@media (max-width: 600px){
+    .missing-card{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .missing-card img{
+        margin-bottom: 10px;
+    }
+}
+/*For mobile devices*/
+@media (max-width:480px){
+    .missing-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .missing-card img {
+        margin-bottom: 6px;
+    }
+}
+
+
