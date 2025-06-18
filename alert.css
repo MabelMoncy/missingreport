@@ -2,80 +2,79 @@ body{
     padding: 0;
     margin: 0;
     background-color: white;
+    background-image: url(images/55569.png);
     font-family: arial;
-    background-image: url(images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 header{
+    width: 100%;
     text-align:center;
-    background-color:rgba(210, 20, 20,0.5);
+    background-color:rgba(32, 32, 33, 0.5);
     padding:10px;
     margin-bottom:15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:bold;
-    border-radius:20px;
+    font-size: 10px;
     color: white;
+    text-shadow: 5px 5px 5px rgb(19, 1, 1) ;
 }
 form{
-    background-color: rgb(255, 255, 255,0.3);
-    padding: 24px;
-    width: 30%;
+    background-color: rgb(255, 255, 255,0.2);
+    padding: 30px;
+    width: 80%;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 20px;
 }
-form p{
-    text-align: center;
-    font-size: 20px;
+h2{
+    font-size: 16px;
     font-weight: bold;
+    color: rgb(246, 246, 246);
+    text-shadow: 2px 1px 5px rgb(7, 7, 7);
 }
 label{
-    display: block;
+   display: flex;
     margin-bottom: 10px;
     margin-top: 10px;
     font-weight: bold;
+    font-size: 15px;
+    color: rgb(238, 240, 242);
+    text-shadow: 2px 1px 5px rgb(7, 7, 7);
+
 }
 input,textarea{
     width: 95%;
-    padding: 15px;
+    padding: 10px;
     outline: none;
     border-radius: 10px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 button{
 
-    background-color: red;
-    width: 100%;
+    background-color: rgb(10, 72, 179);
+    width: 80%;
     padding: 10px;
     border: none;
     border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10%;
 }
 button:hover{
-    background-color: rgb(216, 73, 73);
+    background-color: rgb(2, 4, 68);
     cursor: pointer;
 }
-input:hover{
-    padding-top: 15px;
-    margin-bottom: 15px;
-    transition: 0.5s ease-out;
-}
-textarea:hover{
-    padding-top: 15px;
-    margin-bottom: 15px;
-    transition: .5s;
-}
 footer{
-    background-color:rgba(210, 20, 20,0.5);
-    padding:20px;
     text-align: center;
     font-family: 'Times New Roman';
     font-style: italic;
+    font-size: 10px;
     display: fixed;
-    color: white;
-    margin-top: auto;
+    color: rgb(15, 15, 15);
     position: relative;
-    bottom: 0;
-    width: 100%;
+    width: 80%;
 }
 /*Reported list*/
 .list-container{
@@ -91,7 +90,7 @@ footer{
     margin-right: 15px;
 }
 .missing-card div,img{
-    flex: 1;
+    flex: 1; 
     background-color: white;
     box-shadow:rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 15px;
@@ -102,7 +101,7 @@ footer{
 .missing-card:hover {
     transform: scale(1.02);
     transition: 0.3s;
-    color: rgb(100, 20, 20);
+    color: rgb(3, 3, 3);
 }
 .missing-card p{
     margin: 5px 0;
@@ -119,15 +118,30 @@ footer{
     }
 }
 /*For mobile devices*/
-@media (max-width:480px){
+@media (min-width:1024px){
+
+    form{
+    background-color: rgb(255, 255, 255,0.2);
+    padding: 30px;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+
     .missing-card {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-left: 10%;
+        width: 82%;
+        
     }
 
     .missing-card img {
         margin-bottom: 6px;
+    }
+    h2{
+        text-align: center;
     }
 }
 
